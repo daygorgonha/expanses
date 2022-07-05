@@ -44,10 +44,7 @@ class TransactionList extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         tr.title,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                        ),
+                        style: Theme.of(context).textTheme.headline6,
                       ),
                       SizedBox(
                         height: 10,
@@ -55,7 +52,6 @@ class TransactionList extends StatelessWidget {
                       Text(
                         DateFormat('d MMM y').format(tr.date),
                         style: TextStyle(
-                          fontWeight: FontWeight.normal,
                           color: Colors.grey[600],
                         ),
                       ),
